@@ -18,5 +18,9 @@
   "homepage": "https://github.com/yuki-takara/electron-puppeteer-sample#readme",
   "devDependencies": {
     "electron": "^9.2.0"
+  },
+  "dependencies": {
+    "puppeteer-core": "^5.2.1",
+    "puppeteer-in-electron": "^3.0.3"
   }
 }
