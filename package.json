@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yuki-takara/electron-puppeteer-sample/issues"
   },
-  "homepage": "https://github.com/yuki-takara/electron-puppeteer-sample#readme"
+  "homepage": "https://github.com/yuki-takara/electron-puppeteer-sample#readme",
+  "devDependencies": {
+    "electron": "^9.2.0"
+  }
 }
