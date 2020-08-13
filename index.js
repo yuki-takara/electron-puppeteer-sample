@@ -12,7 +12,22 @@ const main = async () => {
 
   const page = await pie.getPage(browser, window);
   console.log(page.url());
-  window.destroy();
+
+  // 検索用のinputに文字を検索したいテキストを入力
+  await page.type('input[title="検索"]', "Puppeteer", { delay: 50 });
+
+  //　検索ボタンをクリック
+  await page.evaluate(() => {
+    document.querySelector('input[value^="Google"]').click();
+  });
+
+  // ページ遷移を待つ
+  await page.waitForNavigation({timeout: 600000, waitUntil: "domcontentloaded"});
+
+  console.log('検索結果がブラウザに表示されました。');
+
+  // window.destroy();
 };
 
 main();
+
