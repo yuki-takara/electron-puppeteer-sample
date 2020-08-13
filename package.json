@@ -24,5 +24,20 @@
   "dependencies": {
     "puppeteer-core": "^5.2.1",
     "puppeteer-in-electron": "^3.0.3"
+  },
+  "build": {
+    "appId": "com.electron.puppeteer11",
+    "mac": {
+      "target": "dmg"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "protocols": {
+      "name": "myApp IM URL",
+      "schemes": [
+        "puppeteer-sample"
+      ]
+    }
   }
 }
